@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Image flip flop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        .images {
+            position: relative;
+            cursor: pointer;
+            width: 300px;
+            height: 420px;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+        }
+
+        .images img {
+            position: absolute;
+            backface-visibility: hidden;
+            transition: 1s;
+        }
+
+        .images img:nth-child(2) {
+            transform: rotateY(180deg);
+        }
+
+        .images:hover img:nth-child(2) {
+            transform: rotateY(0deg);
+        }
+
+        .images:hover img:nth-child(1) {
+            transform: rotateY(-180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="images">
+        <img src="boy.png" alt="boy">
+        <img src="girl.png" alt="girl">
+    </div>
+</body>
+
+</html>
