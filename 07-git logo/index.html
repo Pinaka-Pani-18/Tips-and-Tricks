@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>git logo</title>
+    <!-- Tips & Tricks ( @developer_pani) -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 100px 150px;
+        }
+
+        .gitLogo {
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+            border-radius: 10px;
+            transform: rotate(45deg);
+        }
+
+        .first {
+            height: 20px;
+            width: 150px;
+            background-color: white;
+            position: absolute;
+            top: 40px;
+        }
+
+        .first::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            top: -15px;
+            left: 80%;
+        }
+
+        .first::before {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            top: -15px;
+            left: 20%;
+        }
+
+        .second {
+            height: 20px;
+            width: 150px;
+            background-color: white;
+            position: absolute;
+            transform: rotate(45deg);
+            top: 90px;
+            left: 25px;
+        }
+
+        .second::after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border-radius: 50%;
+            top: -15px;
+            left: 80%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="gitLogo">
+        <div class="first"></div>
+        <div class="second"></div>
+    </div>
+</body>
+<!-- Thanks for watching -->
+
+</html>
