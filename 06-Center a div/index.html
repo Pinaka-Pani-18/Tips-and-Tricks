@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center a Div</title>
+    <!-- Tips & Tricks ( @developer_pani) -->
+
+    <style>
+        body {
+            margin: 50px 100px;
+            background-color: black;
+            font-family: sans-serif;
+            position: relative;
+        }
+
+        .container {
+            width: 300px;
+            height: 300px;
+            border: 4px solid white;
+            border-radius: 10px;
+            padding: 10px;
+            /* Method 1 */
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+
+            /* method 2 */
+            /* display: grid;
+            place-content: center; */
+        }
+
+        .div {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            background-color: white;
+            font-weight: 600;
+            border-radius: 10px;
+
+            /* Method 3 */
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="div">I am div</div>
+    </div>
+
+</body>
+
+<!-- Thanks for watching -->
+
+</html>
